@@ -1,1 +1,12 @@
-{ "chromeWebSecurity": false }
+{
+    "chromeWebSecurity": false,
+	"integrationFolder": ".",
+  	"testFiles": ["cypress/integration/**/*.feature", "cypress/integration/**/*.spec.js"],
+    "defaultCommandTimeout": 60000,
+	"env" :
+	{
+		"base_url" : "https://www.saucedemo.com/"
+	},
+	"pageLoadTimeout": 60000,
+	"fixturesFolder": "cypress/fixtures"
+}

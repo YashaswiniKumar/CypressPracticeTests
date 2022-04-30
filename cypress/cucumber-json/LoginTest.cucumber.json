@@ -1,0 +1,149 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Login",
+    "line": 1,
+    "id": "login",
+    "tags": [],
+    "uri": "LoginTest.feature",
+    "elements": [
+      {
+        "id": "login;login-to-ecommerce-site",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Login to ecommerce site",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User is at the Home Page",
+            "result": {
+              "status": "passed",
+              "duration": 855000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User enters the Username and password",
+            "result": {
+              "status": "passed",
+              "duration": 1128000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "User Login successfully",
+            "result": {
+              "status": "passed",
+              "duration": 278000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;end-to-end-transaction",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "End to end transaction",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 9
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "standard_user",
+                      "secret_sauce"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "User is logged in and products are displayed",
+            "result": {
+              "status": "passed",
+              "duration": 2554000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "User adds three products",
+            "result": {
+              "status": "passed",
+              "duration": 733000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Cart should contain three products",
+            "result": {
+              "status": "passed",
+              "duration": 140000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "User clicks on Checkout",
+            "result": {
+              "status": "passed",
+              "duration": 115000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "User enters Address and clicks on continue",
+            "result": {
+              "status": "passed",
+              "duration": 1805000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "User cliks on Finish and successfully place order",
+            "result": {
+              "status": "passed",
+              "duration": 194000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

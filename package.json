@@ -4,7 +4,24 @@
   "description": "Practice tests from udemy course",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test":"node_modules\\.bin\\cypress run",
+    "cy:CucumberLogin": "npx cypress run --spec cypress/integration/BDD/LoginTest.feature --headed --browser chrome",
+    "cy:AdvancedAlerts": "npx cypress run --spec cypress/integration/tests/AdvancedAlerts.spec.js --headed --browser chrome",
+    "cy:Aliasing": "npx cypress run --spec cypress/integration/tests/Aliasing.spec.js --headed --browser chrome",
+    "cy:CustomCommand": "npx cypress run --spec cypress/integration/tests/CustomCommand.spec.js --headed --browser chrome",
+    "cy:LearningTests2": "npx cypress run --spec cypress/integration/tests/LearningTest2.spec.js --headed --browser chrome"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "json": {
+    "enabled": true
   },
   "repository": {
     "type": "git",
@@ -17,6 +34,8 @@
   },
   "homepage": "https://github.com/YashaswiniKumar/CypressPractice#readme",
   "devDependencies": {
-    "cypress": "^9.5.3"
+    "cypress": "^9.5.3",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "multiple-cucumber-html-reporter": "^1.20.0"
   }
 }
