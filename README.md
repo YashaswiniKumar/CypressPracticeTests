@@ -1,7 +1,7 @@
 # Cypress Practice 
-This repo has the following practice tests for
+This repo has the practice tests for the following,
 
-# Cucumber Integration with Cypress
+ Cucumber Integration with Cypress
   Install the npm package cypress-cucumber-preprocessor and multiple-cucumber-html-reporter (for report generation)
   1. End to end flow to place order in an Ecommerce site
   3. Feature file and Step Def file 
